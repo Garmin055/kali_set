@@ -19,3 +19,5 @@ cd lscript
 chmod +x install.sh
 ./install.sh
 cp l /bin
+cd ~
+rm -r kali_set
