@@ -7,6 +7,7 @@ apt install bettercap -y
 apt install fonts-nanum -y 
 apt install fcitx-lib* -y
 apt install fcitx-hangul -y 
+apt install terminator -y
 
 mkdir /usr/local/share/bettercap
 mkdir /usr/local/share/bettercap/caplets
@@ -19,5 +20,6 @@ cd lscript
 chmod +x install.sh
 ./install.sh
 cp l /bin
+
 cd ~
 rm -r kali_set
