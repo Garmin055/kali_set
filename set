@@ -1,7 +1,6 @@
 #!/bin/bash/
 
 sudo su
-cd ~
 apt-get update
 apt-get upgrade -y
 apt install bettercap -y
@@ -11,5 +10,12 @@ apt install fcitx-hangul -y
 
 mkdir /usr/local/share/bettercap
 mkdir /usr/local/share/bettercap/caplets
-cp hstshijack /usr/local/share/bettercap/caplets
+cp -r hstshijack /usr/local/share/bettercap/caplets
 cp spoof.cap ~
+
+cd ~
+git clone https://github.com/arismelachroinos/lscript.git
+cd lscript
+chmod +x install.sh
+./install.sh
+cp l /bin
