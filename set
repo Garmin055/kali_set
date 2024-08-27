@@ -1,0 +1,15 @@
+#!/bin/bash/
+
+sudo su
+cd ~
+apt-get update
+apt-get upgrade -y
+apt install bettercap -y
+apt install fonts-nanum -y 
+apt install fcitx-lib* -y
+apt install fcitx-hangul -y 
+
+mkdir /usr/local/share/bettercap
+mkdir /usr/local/share/bettercap/caplets
+cp hstshijack /usr/local/share/bettercap/caplets
+cp spoof.cap ~
